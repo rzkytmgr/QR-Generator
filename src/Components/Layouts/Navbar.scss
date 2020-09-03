@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+.Navbar {
+    background: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 18px rgba(100, 149, 237, .4);
+  
+    @media (min-width: 760px){
+      padding: 20px 100px;
+  
+      a {
+        font-size: 20px;
+      }
+  
+      ul {
+        margin-right: 30px;
+      }
+    }
+  
+    a {
+      font-weight: 500;
+      color: white;
+      text-decoration: none;
+    }
+  
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      li {
+        font-size: 14px;
+        margin: 0 20px;
+        display: inline-block;
+
+        a {
+            font-size: 14px;
+        }
+      }
+    }
+  
+  }

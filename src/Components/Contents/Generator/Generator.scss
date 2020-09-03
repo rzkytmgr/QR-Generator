@@ -1,0 +1,52 @@
+
+@mixin ImageBoxandFormBox {
+  margin: 0 20px;
+}
+
+.Content {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+
+  
+  .Image-Box {
+    @include ImageBoxandFormBox();
+  }
+
+  .Form-Box {
+    @include ImageBoxandFormBox();
+
+    div {
+      margin: 20px 0;
+    
+    
+      input {
+        width: 250px;
+        outline: none;
+      
+        &[type="text"] {
+          padding: 10px;
+          border: 1px solid gray;
+          border-radius: 2px;
+        }
+
+        &[type="range"] {
+          color: black;
+          background: red;
+        }
+      }
+    }
+    div:nth-child(n) {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-size: 12px;
+        border-radius: 2px;
+        border: 1px solid cornflowerblue;
+        padding: 0 5px;
+      }
+    }
+  }
+}

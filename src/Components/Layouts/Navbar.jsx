@@ -11,9 +11,11 @@ export default function Navbar() {
         </span>
         <ul>
           <li><a href="about">About</a></li>
-          <li><a href="about">How To Use</a></li>
+          <li><a href="how-to-use">How To Use</a></li>
           <li>
-            <GitHubIcon />
+            <a href="https://github.com/rzkytmgr/QR-Generator">
+              <GitHubIcon />
+            </a>
           </li>
         </ul>
       </nav>

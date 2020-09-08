@@ -6,6 +6,11 @@ export default class About extends Component {
     state = {
         marginStyle: {
             margin: "10px 0"
+        },
+
+        para: {
+            marginTop: "10px",
+            lineHeight: "1.4rem"
         }
     }
     render() {
@@ -14,7 +19,7 @@ export default class About extends Component {
                 <Box mt={10}>
                     <h1 style={this.state.marginStyle}>{this.props.title}</h1>
                     <hr/>
-                    <p style={this.state.marginStyle}>{this.props.body}</p>
+                    <p style={this.state.marginStyle, this.state.para}>{this.props.body}</p>
                 </Box>
             </Container>
         )
